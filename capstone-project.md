@@ -27,14 +27,7 @@ The workflow emphasizes "shift-left" security by integrating scans early in the 
 
 Below is a high-level architecture diagram represented using Mermaid syntax for easy rendering in Markdown viewers (e.g., GitHub, VS Code). It illustrates the end-to-end DevSecOps pipeline flow.
 
-![Project Diagram](../../assets/final-project%20Arch.png)
-
-### Diagram Explanation
-- **Left Side (CI)**: Starts with code commit, runs security scans (SonarQube for code, Trivy for images), builds and pushes Docker images.
-- **Middle (Infrastructure)**: Terraform provisions the Kubernetes cluster.
-- **Right Side (CD/GitOps)**: ArgoCD pulls manifests from Git and deploys to K8s.
-- **Bottom (Monitoring)**: Prometheus scrapes metrics from the cluster/app, visualized in Grafana.
-- Arrows show the automated flow, with security integrated at multiple stages.
+![Project Diagram](assets/final-project%20Arch.png)
 
 ## Project Components and Setup
 
